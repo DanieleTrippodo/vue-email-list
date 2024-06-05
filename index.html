@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
+
+    <!-- Collegamento CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 
 <body>
-    <!-- contenuto HTML -->    
+    
+    <!-- Instanza di Vue -->
+    <div id="app"> 
+    
+        <h1>Generatore di Email</h1>
+       
 
+        <ul>
+            <li v-for="email in emails" :key="email">{{ email }}</li>
+        </ul>
 
+        <!-- bottone per generare le email -->
+        <button @click="generateEmails">Genera Email</button>
+    
+    </div>
 
 
 
